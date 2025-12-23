@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  height: 70px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  color: #01473B;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar ul li:hover {
+  color: #01473B;
+}
+
+.store-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #01473B;
+  background: transparent;
+  cursor: pointer;
+}
+
+.store-btn:hover {
+  background: #01473B;
+  color: white;
+}
+
+/* MOBILE NAV */
+.navbar-mobile {
+  display: none;
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #01473B;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 160px;
+  line-height: 150px;
+  color: #01473B;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  max-width: 400px;
+}
+
+.hero-text button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  background: #01473B;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background: #01362d;
+}
+
+/* IMAGE */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* ================= SPECS ================= */
+
+.specs {
+  margin: 40px 60px;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.specs div {
+  text-align: center;
+}
+
+.specs span {
+  color: #01473B;
+  font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 70px;
+    line-height: 75px;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 280px;
+  }
+
+  .specs {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+  }
+}
+
+/* 📲 Tablet */
+@media (max-width: 1024px) {
+
+  .hero-text h1 {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  .hero-image img {
+    max-width: 380px;
+  }
+}
