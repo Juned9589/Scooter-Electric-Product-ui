@@ -11,8 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ================= NAVBAR ================= */
-
+ 
 .navbar {
   height: 70px;
   padding: 0 50px;
@@ -53,8 +52,7 @@ body {
   color: white;
 }
 
-/* MOBILE NAV */
-.navbar-mobile {
+ .navbar-mobile {
   display: none;
   padding: 15px 25px;
   justify-content: space-between;
@@ -62,8 +60,7 @@ body {
   border-bottom: 1px solid #01473B;
 }
 
-/* ================= HERO ================= */
-
+ 
 .hero {
   display: flex;
   align-items: center;
@@ -100,8 +97,7 @@ body {
   background: #01362d;
 }
 
-/* IMAGE */
-.hero-image {
+ .hero-image {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -112,8 +108,7 @@ body {
   max-width: 450px;
 }
 
-/* ================= SPECS ================= */
-
+ 
 .specs {
   margin: 40px 60px;
   border: 1px solid black;
@@ -132,10 +127,8 @@ body {
   font-weight: bold;
 }
 
-/* ================= RESPONSIVE ================= */
-
-/* 📱 Mobile */
-@media (max-width: 768px) {
+ 
+ @media (max-width: 768px) {
 
   .navbar {
     display: none;
@@ -171,8 +164,7 @@ body {
   }
 }
 
-/* 📲 Tablet */
-@media (max-width: 1024px) {
+ @media (max-width: 1024px) {
 
   .hero-text h1 {
     font-size: 110px;
